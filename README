@@ -1,6 +1,49 @@
 Taking inspiration from a traditional "Ideaboard", a corkboard or wall with lots of photos, images and sketches all pasted up on it to form a collective theme, we created an online ideaboard that pulls all of its "ideas" directly from Evernote notebooks and allows Onyx to share inspiration among its employees across the country.
 
-Using the Evernote API we developed a project called The Evernote Ideaboard, that lets people visualize their notebooks in a unique way. One of the downsides of Evernote is that you are able to share a notebook with others, in order to effectively use it, you cannot use the client program and must use their web interface. The web interface of Evernote leaves a lot to be desired in terms of usability. In addition, both the client program and the Evernote website both lack the look and feel our team desired.
+Using the Evernote API we developed a project called Everboard, that lets people visualize their notebooks in a unique way. One of the downsides of Evernote is that you are able to share a notebook with others, in order to effectively use it, you cannot use the client program and must use their web interface. The web interface of Evernote leaves a lot to be desired in terms of usability. In addition, both the client program and the Evernote website both lack the look and feel our team desired.
 
 
-Find out more information at onyxcreates.com
+Find out more information at onyxcreates.com/everboard
+
+Instructions
+
+Setting up the config file
+You will need to add/modify some of the things in the config.php file. You will need to add the following which you can get by registering for an Evernote API key:
+These are the username and pw for the account which holds the notebooks you wish to access
+USERNAME 
+PASSWORD
+These are the API keys
+CONSUMER_KEY
+CONSUMER_SECRET
+
+In addition, there is another config.php file which needs to be setup. This is located under view/config.php
+
+For security purposes the writer will only grab and cache the notebooks specified in
+$valid_notebooks
+this is a list of notebook GUIDs, to see a list of all your notebook GUIDS, set the DEBUG_IT flag to true in config.php
+and then run writer.php. You will see a list of all your notebooks along with their GUID, simply add the ones you want to 
+sync to this list.
+
+Security
+It would probably be best to keep the everboard directory outside of your webroot. Since the call to writer.php is a pretty
+heavy request you don't want people directly accessing it. Rather the whole directory can be put outside your web root (note
+you may have to configure the open_basedir) and then set up a Cron Job to run writer.php every so often. This way it will keep
+your notebook in sync and not put too much strain on your server.
+
+Color Bar
+In order to have the color bar display above the images create a note called palette and use hex color codes for the tags.
+
+Potential Issues
+
+Memory
+If you are using large images you may need to up the allowed memory in your PHP.ini file
+memory_limit = ; Maximum amount of memory a script may consume
+
+open_basedir
+if you are running the code outside of your webserver (recommended) you will probably need to set up the open_basedir.
+
+timeouts
+You might want to set the maximum execution time to something high in the config file if you are getting any timeouts.
+In addition, it might take a couple runs to sync all of your stuff the first time you do a sync.
+
+for more information please check everboard.onyxcreates.com
