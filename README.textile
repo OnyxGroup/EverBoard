@@ -5,9 +5,9 @@ Taking inspiration from a traditional "Ideaboard", a corkboard or wall with lots
 Using the Evernote API we developed a project called Everboard, that lets people visualize their notebooks in a unique way. One of the downsides of Evernote is that you are able to share a notebook with others, in order to effectively use it, you cannot use the client program and must use their web interface. The web interface of Evernote leaves a lot to be desired in terms of usability. In addition, both the client program and the Evernote website both lack the look and feel our team desired.
 
 h2. Project Info
-* *Web:* "http://onyxcreates.com/everboard" : http://onyxcreates.com/everboard
-* *Source:* "http://github.com/OnyxGroup/Everboard" : http://github.com/OnyxGroup/Everboard
-* *Issues/Bugs:* "http://github.com/OnyxGroup/Everboard/issues" : http://github.com/OnyxGroup/Everboard/issues
+* *Web:* "http://onyxcreates.com/everboard":http://onyxcreates.com/everboard
+* *Source:* "http://github.com/OnyxGroup/Everboard":http://github.com/OnyxGroup/Everboard
+* *Issues/Bugs:* "http://github.com/OnyxGroup/Everboard/issues":http://github.com/OnyxGroup/Everboard/issues
 
 
 h2. Instructions
@@ -18,7 +18,7 @@ You will need to add/modify some of the things in the @config.php@ file. You wil
 * These are the username and pw for the account which holds the notebooks you wish to access
 * @USERNAME@
 * @PASSWORD@
-*These are the API keys
+* These are the API keys
 * @CONSUMER_KEY@
 * @CONSUMER_SECRET@
 
@@ -58,15 +58,15 @@ You can put the @cache@ directory wherever as long as its writable and you have 
 h2. Props
 
 Just want to give shoutouts to all the great devs who put out code that I am using here:
-Evernote team "http://www.evernote.com": http://www.evernote.com
-jQuery "http://www.jquery.com" : http://www.jquery.com
-David DeSandro with the amazing Masonry "http://desandro.com/resources/jquery-masonry" : http://desandro.com/resources/jquery-masonry
-Janis Skarnelis with fancybox "http://fancybox.net" : http://fancybox.net
-George McGinley Smith jQuery easing "http://gsgd.co.uk/sandbox/jquery/easing/" : http://gsgd.co.uk/sandbox/jquery/easing/
-Brandon Aaron mousewheel "http://brandonaaron.net" : http://brandonaaron.net
+Evernote team "http://www.evernote.com":http://www.evernote.com
+jQuery "http://www.jquery.com":http://www.jquery.com
+David DeSandro with the amazing Masonry "http://desandro.com/resources/jquery-masonry":http://desandro.com/resources/jquery-masonry
+Janis Skarnelis with fancybox "http://fancybox.net":http://fancybox.net
+George McGinley Smith jQuery easing "http://gsgd.co.uk/sandbox/jquery/easing/":http://gsgd.co.uk/sandbox/jquery/easing/
+Brandon Aaron mousewheel "http://brandonaaron.net":http://brandonaaron.net
 
 h2. Issues
 
-Please send any issues to our GitHub page "http://github.com/OnyxGroup/EverBoard/issues" : http://github.com/OnyxGroup/EverBoard/issues
+Please send any issues to our GitHub page "http://github.com/OnyxGroup/EverBoard/issues":http://github.com/OnyxGroup/EverBoard/issues
 
 Copyright 2010 Adrian Mummey, Onyx Group(c)
