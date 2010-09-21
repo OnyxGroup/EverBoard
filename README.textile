@@ -15,10 +15,10 @@ h2. Instructions
 h3. Setting up the config file
 
 You will need to add/modify some of the things in the @config.php@ file. You will need to add the following which you can get by registering for an Evernote API key:
-These are the username and pw for the account which holds the notebooks you wish to access
+* These are the username and pw for the account which holds the notebooks you wish to access
 * @USERNAME@
 * @PASSWORD@
-These are the API keys
+*These are the API keys
 * @CONSUMER_KEY@
 * @CONSUMER_SECRET@
 
