@@ -5,7 +5,7 @@ Taking inspiration from a traditional "Ideaboard", a corkboard or wall with lots
 Using the Evernote API we developed a project called Everboard, that lets people visualize their notebooks in a unique way. One of the downsides of Evernote is that you are able to share a notebook with others, in order to effectively use it, you cannot use the client program and must use their web interface. The web interface of Evernote leaves a lot to be desired in terms of usability. In addition, both the client program and the Evernote website both lack the look and feel our team desired.
 
 h2. Project Info
-* *Web:* "http://onyxcreates.com/everboard":http://onyxcreates.com/everboard
+* *Web/Demo:* "http://onyxcreates.com/everboard":http://onyxcreates.com/everboard
 * *Source:* "http://github.com/OnyxGroup/Everboard":http://github.com/OnyxGroup/Everboard
 * *Issues/Bugs:* "http://github.com/OnyxGroup/Everboard/issues":http://github.com/OnyxGroup/Everboard/issues
 
@@ -25,8 +25,7 @@ You will need to add/modify some of the things in the @config.php@ file. You wil
 In addition, there is another @config.php@ file which needs to be setup. This is located under @view/config.php@.
 
 For security purposes the writer will only grab and cache the notebooks specified in @$valid_notebooks@; this is a list of notebook GUIDs, to see a list of all your notebook GUIDS, set the @DEBUG_IT@ flag to @true@ in @config.php@ and then run @writer.php@. You will see a list of all your notebooks along with their GUID, simply add the ones you want to sync to this list. 
-*NOTE: Do not store any sensitive information in any of the valid_notebooks because all the information will
-be accessible on the web-server.*
+*NOTE: Do not store any sensitive information in any of the valid_notebooks because all the information will be accessible on the web-server.*
 
 h2. Security
 
