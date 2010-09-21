@@ -1,0 +1,66 @@
+h1. Everboard Readme
+Taking inspiration from a traditional "Ideaboard", a corkboard or wall with lots of photos, images and sketches all pasted up on it to form a collective theme, we created an online ideaboard that pulls all of its "ideas" directly from Evernote notebooks and allows Onyx to share inspiration among its employees across the country.
+
+Using the Evernote API we developed a project called Everboard, that lets people visualize their notebooks in a unique way. One of the downsides of Evernote is that you are able to share a notebook with others, in order to effectively use it, you cannot use the client program and must use their web interface. The web interface of Evernote leaves a lot to be desired in terms of usability. In addition, both the client program and the Evernote website both lack the look and feel our team desired.
+
+h2. Project Info
+* *Web:* "http://onyxcreates.com/everboard" : http://onyxcreates.com/everboard
+* *Source:* "http://github.com/OnyxGroup/Everboard" : http://github.com/OnyxGroup/Everboard
+* *Issues/Bugs:* "http://github.com/OnyxGroup/Everboard/issues" : http://github.com/OnyxGroup/Everboard/issues
+
+
+h2. Instructions
+
+h3. Setting up the config file
+You will need to add/modify some of the things in the @config.php@ file. You will need to add the following which you can get by registering for an Evernote API key:
+These are the username and pw for the account which holds the notebooks you wish to access
+* @USERNAME@
+* @PASSWORD@
+These are the API keys
+* @CONSUMER_KEY@
+* @CONSUMER_SECRET@
+
+In addition, there is another @config.php@ file which needs to be setup. This is located under @view/config.php@.
+
+For security purposes the writer will only grab and cache the notebooks specified in @$valid_notebooks@; this is a list of notebook GUIDs, to see a list of all your notebook GUIDS, set the @DEBUG_IT@ flag to @true@ in @config.php@ and then run @writer.php@. You will see a list of all your notebooks along with their GUID, simply add the ones you want to sync to this list. 
+*NOTE: Do not store any sensitive information in any of the valid_notebooks because all the information will
+be accessible on the web-server.*
+
+h2. Security
+It would probably be best to keep the everboard directory outside of your web root directory. Since the call to @writer.php@ is a pretty heavy request you don't want people directly accessing it. Rather the whole directory can be put outside your web root (note: you may have to configure the open_basedir) and then set up a Cron Job to run @writer.php@ every so often. This way it will keep your notebook in sync and not put too much strain on your server.
+
+h2. Color Bar
+In order to have the color bar display above the images create a note called *palette* and use hex color codes for the tags.
+
+
+h2. Potential Issues
+
+h3. Memory
+If you are using large images you may need to up the allowed memory in your @php.ini@ file
+@memory_limit = 256M; Maximum amount of memory a script may consume@
+
+h3. open_basedir
+if you are running the code outside of your webserver (recommended) you will probably need to set up the @open_basedir@.
+
+h3. timeouts
+You might want to set the maximum execution time to something high in the config file if you are getting any timeouts. In addition, it might take a couple runs to sync all of your stuff the first time you do a sync. If you are still getting timeout, try adding only one notebook at a time to the @$valid_notebooks@.
+
+h3. Permissions
+You can put the @cache@ directory wherever as long as its writable and you have web access to it
+
+
+h2. Props
+
+Just want to give shoutouts to all the great devs who put out code that I am using here:
+Evernote team "http://www.evernote.com": http://www.evernote.com
+jQuery "http://www.jquery.com" : http://www.jquery.com
+David DeSandro with the amazing Masonry "http://desandro.com/resources/jquery-masonry" : http://desandro.com/resources/jquery-masonry
+Janis Skarnelis with fancybox "http://fancybox.net" : http://fancybox.net
+George McGinley Smith jQuery easing "http://gsgd.co.uk/sandbox/jquery/easing/" : http://gsgd.co.uk/sandbox/jquery/easing/
+Brandon Aaron mousewheel "http://brandonaaron.net" : http://brandonaaron.net
+
+h2. Issues
+
+Please send any issues to our GitHub page "http://github.com/OnyxGroup/EverBoard/issues" : http://github.com/OnyxGroup/EverBoard/issues
+
+Copyright 2010 Adrian Mummey, Onyx Group(c)
