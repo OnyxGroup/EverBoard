@@ -22,6 +22,9 @@ require_once EVERBOARD_CODE_PATH.'reader.php';
 	<body>
 	   <?php 
 	     $notebook = getCurrentNotebook($notebooks);
+	     if($notebook === false){
+	       die('<h2>No notebooks found</h2>');
+	     }
 	   ?>
       
       <?php
