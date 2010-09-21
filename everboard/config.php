@@ -53,6 +53,7 @@ define('DELETE_OLD', true);
 define('RESIZE_IMAGES', true);
 define('THUMB_WIDTH', 332);
 //If you want your thumb to just be locked to a specific width or height, set the other dimension to zero
+//For the Masonry we are using fixed width images
 define('THUMB_HEIGHT', 0);
 
-$valid_notebooks = array('8e12457d-5e7c-4b90-ac0c-d4fa2945b9d8', '73904975-7ad8-4d34-8abe-6bef7756c67d', '1d9b9aa4-5381-43d2-b818-fcececced3a4');
+$valid_notebooks = array();
