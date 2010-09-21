@@ -46,6 +46,11 @@ h3. open_basedir
 
 if you are running the code outside of your webserver (recommended) you will probably need to set up the @open_basedir@.
 
+h3. PEAR Requirement
+
+Some of the code needs PEAR to run, you should include the PEAR library into your include path. If you are running a cron job via command line you can use the following code to include PEAR (make sure you have the correct directory)
+@php -d include_path=".:/usr/share/pear" /path/to/writer.php@
+
 h3. timeouts
 
 You might want to set the maximum execution time to something high in the config file if you are getting any timeouts. In addition, it might take a couple runs to sync all of your stuff the first time you do a sync. If you are still getting timeout, try adding only one notebook at a time to the @$valid_notebooks@.
