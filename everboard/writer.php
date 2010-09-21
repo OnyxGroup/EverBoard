@@ -1,6 +1,12 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+/**
+ * writer.php
+ *
+ * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
+ * @author Adrian Mummey - http://mummey.org
+ * @version $Id$
+**/
+
 
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . "bootstrap.php";
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . "config.php";

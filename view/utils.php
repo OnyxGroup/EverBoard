@@ -1,4 +1,12 @@
 <?php
+/**
+ * utils.php
+ *
+ * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
+ * @author Adrian Mummey - http://mummey.org
+ * @version $Id$
+**/
+
 function isImageMime($string)
 {
 	return in_array(strtolower($string), array('image/jpeg', 'images/gif', 'image/png', 'image/jpg'));

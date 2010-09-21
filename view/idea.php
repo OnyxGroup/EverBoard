@@ -1,4 +1,12 @@
 <?php 
+/**
+ * idea.php
+ *
+ * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
+ * @author Adrian Mummey - http://mummey.org
+ * @version $Id$
+**/
+
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'config.php';
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'utils.php';
 

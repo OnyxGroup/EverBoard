@@ -1,4 +1,11 @@
 <?php
+/**
+ * FileManager.class.php
+ *
+ * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
+ * @author Adrian Mummey - http://mummey.org
+ * @version $Id$
+**/
 
 class FileManager
 {

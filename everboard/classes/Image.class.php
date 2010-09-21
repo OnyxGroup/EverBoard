@@ -1,4 +1,12 @@
 <?php
+/**
+ * Image.class.php
+ *
+ * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
+ * @author Adrian Mummey - http://mummey.org
+ * @version $Id$
+**/
+
 ini_set('gd.jpeg_ignore_warning', 1);
 
 class Image{
