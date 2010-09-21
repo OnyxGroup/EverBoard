@@ -1,0 +1,76 @@
+
+/* reset.css */
+html, body, div, span, object, iframe, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+a{outline: none;}
+
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden}
+.clearfix{display:block}
+.clear{clear:both}
+
+/*Custom*/
+body{color:#a2a2a2; font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+h1{color: #00bbe4; font-size: 3em; margin: 0 0 .25em 0;}
+table{width: 100%;}
+
+body{padding: 0 10px;}
+.idea-link img{position:relative; z-index: 1;}
+.idea-link:hover img{ -moz-box-shadow:0 0 15px #000 !important; box-shadow:0 0 15px #000 !important; -webkit-box-shadow: 0 0 15px #000 !important;}
+
+ul{margin: 0; padding: 0; list-style: none;}
+li{list-style: none;}
+
+#container{margin: 0 auto;}
+#header{margin: 10px 0; border-bottom: 1px dotted #a2a2a2;}
+#primary{display: block; margin: 0 auto;}
+#primary li{list-style: none; display: block; margin: 0 5px 5px 0; padding: 0; float: left;}
+
+#tag-list{margin: 20px 0;}
+#tag-list li {float: left; margin-right: 10px; position: relative; font-size: 12px;}
+#tag-list li a,#tag-list li span{display: block;  display: block; padding: 3px; margin-bottom: 10px;}
+#tag-list li a{ color: #fff; background: #00bbe4; text-decoration: none; padding: 3px 20px; }
+#tag-list li a:hover{background: #a2a2a2; color: #000;}
+#tag-list li a.special-tag{background: #CBCF44;}
+#tag-list li a.special-tag:hover{background: #a2a2a2; color: #000;}
+
+.idea-list-text{width: 500px; overflow: hidden;}
+.idea-link{ display: block;}
+.img-link{display: block; text-indent: -9999px; font-size: 0pt; background-repeat: no-repeat;}
+/*a.info-link{width: 33px; height: 26px; background: url(assets/info.png); position: absolute; top:5px; right: 5px; display: none; z-index: 20;}
+a.info-link:hover{background-position: bottom left;}*/
+
+#palette-wrap{margin: 13px 0;}
+#palette-wrap td{height: 40px;}
+#palette td{text-align: center; color: #fff; -moz-text-shadow:0 0 7px #000 !important; text-shadow:0 0 7px #000 !important; -webkit-text-shadow: 0 0 7px #000 !important; text-indent: -9999px;}
+#palette td.hover{text-indent: 0;}
+
+#header-container{position: relative; min-height: 35px;}
+#header-container{padding: 0 300px 0 50px;}
+#tag-label{width:50px; position: absolute; top: 0; left: 0;}
+#tag-list-wrap{width: 100%;}
+#project-select-wrap{ width:300px; position: absolute; top: 0; right: 0; z-index: 10;}
+#project-select{ color:#fff; background: #00bbe4 url(assets/white_down_arrow.gif) no-repeat 150px center; display: block; padding: 4px 20px 4px 10px; width: 150px; text-decoration: none; float: right;}
+#project-select:hover, #project-select.on{background-color: #a2a2a2; color: #000;}
+#project-list{display: none; clear: both;}
+#project-list li a{display: block; padding: 4px 20px 4px 10px; background-color: #a2a2a2; color: #000; text-decoration: none; border-bottom: 1px dotted #fff;}
+#project-list li a:hover{color:#fff; background: #00bbe4;}
+
+/*iframe*/
+
+iframe {border: 2px solid #00bbe4; -moz-border-radius: 10px; border-radius:10px; webkit-border-radius:10px; padding: 5px;}
+iframe *{font-size: 10px !important;}
+
+/*Fancybox*/
+#fancybox-outer{background: #464742;}
+#fancybox-left, #fancybox-right{
+  width: 15% !important;
+}
+a.fb-view-button{display: inline-block; padding: 4px 8px; color: #fff; background: #00bbe4; margin: 0 25px; text-decoration: none; -moz-box-shadow:0 0 15px #000 !important; box-shadow:0 0 10px #000 !important; -webkit-box-shadow: 0 0 10px #000 !important;}
+a.fb-view-button:hover{background: #a2a2a2; color: #000;}

@@ -1,0 +1,1 @@
+These libraries use thrift 20080411-r694538
