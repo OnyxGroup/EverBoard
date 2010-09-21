@@ -5,7 +5,9 @@ Using the Evernote API we developed a project called Everboard, that lets people
 
 Find out more information at onyxcreates.com/everboard
 
+===================================================
 Instructions
+===================================================
 
 Setting up the config file
 You will need to add/modify some of the things in the config.php file. You will need to add the following which you can get by registering for an Evernote API key:
@@ -33,7 +35,9 @@ your notebook in sync and not put too much strain on your server.
 Color Bar
 In order to have the color bar display above the images create a note called palette and use hex color codes for the tags.
 
+===================================================
 Potential Issues
+===================================================
 
 Memory
 If you are using large images you may need to up the allowed memory in your PHP.ini file
@@ -46,4 +50,25 @@ timeouts
 You might want to set the maximum execution time to something high in the config file if you are getting any timeouts.
 In addition, it might take a couple runs to sync all of your stuff the first time you do a sync.
 
-for more information please check everboard.onyxcreates.com
+Permissions
+You can put the cache directory wherever as long as its writable and you have web access to it
+
+===================================================
+Props
+===================================================
+
+Just want to give shoutouts to all the great devs who put out code that I am using here:
+Evernote team www.evernote.com
+jQuery www.jquery.com
+David DeSandro with the amazing Masonry http://desandro.com/resources/jquery-masonry
+Janis Skarnelis with fancybox http://fancybox.net
+George McGinley Smith jQuery easing http://gsgd.co.uk/sandbox/jquery/easing/
+Brandon Aaron mousewheel http://brandonaaron.net
+
+===================================================
+Issues
+===================================================
+
+Please send any issues to our GitHub page http://github.com/OnyxGroup/EverBoard
+
+
