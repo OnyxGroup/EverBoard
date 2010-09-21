@@ -1,6 +1,6 @@
 <?php 
 /**
- * everboard.php
+ * index.php
  *
  * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
  * @author Adrian Mummey - http://mummey.org
