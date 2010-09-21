@@ -5,7 +5,7 @@
  * @copyright 2010, Onyx Creative Group - (onyxcreates.com)
  * @author Adrian Mummey - http://mummey.org
  * @version $Id$
-**/
+ * */
 
 
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . "bootstrap.php";
@@ -29,7 +29,7 @@ $notebooks = array();
 if (!empty($connection->notebooks)) {
 
 	foreach ($connection->notebooks as $notebook) {
-	 	debugIt($notebook->guid.' '.$notebook->name, false);
+		debugIt($notebook->guid.' '.$notebook->name, false);
 		if (in_array($notebook->guid, $valid_notebooks)) {
 			$notebooks[$notebook->guid] = new WebNotebook($notebook, $connection->authToken, $connection->noteStore, $fileManager);
 		}
@@ -119,7 +119,12 @@ function debugIt($data, $krumo=true)
 			}
 		}
 		else {
-			print '<pre>'.$data.'</pre>';
+			if (php_sapi_name() == 'cli' && empty($_SERVER['REMOTE_ADDR'])) {
+				print $data."\n";
+			}
+			else {
+				print '<pre>'.$data.'</pre>'."\n";
+			}
 		}
 	}
 }
