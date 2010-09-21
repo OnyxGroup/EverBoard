@@ -24,7 +24,8 @@ For security purposes the writer will only grab and cache the notebooks specifie
 $valid_notebooks
 this is a list of notebook GUIDs, to see a list of all your notebook GUIDS, set the DEBUG_IT flag to true in config.php
 and then run writer.php. You will see a list of all your notebooks along with their GUID, simply add the ones you want to 
-sync to this list.
+sync to this list. NOTE* Do not store any sensitive information in any of the valid_notebooks because all the information will
+be accessible on the web-server.
 
 Security
 It would probably be best to keep the everboard directory outside of your webroot. Since the call to writer.php is a pretty
@@ -48,7 +49,8 @@ if you are running the code outside of your webserver (recommended) you will pro
 
 timeouts
 You might want to set the maximum execution time to something high in the config file if you are getting any timeouts.
-In addition, it might take a couple runs to sync all of your stuff the first time you do a sync.
+In addition, it might take a couple runs to sync all of your stuff the first time you do a sync. If you are still getting
+timeout, try adding only one notebook at a time to the $valid_notebooks.
 
 Permissions
 You can put the cache directory wherever as long as its writable and you have web access to it
