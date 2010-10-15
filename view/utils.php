@@ -75,7 +75,7 @@ function buildAjaxUrl($notebookGuid, $noteGuid)
 
 function buildNotebookUrl($notebookGuid)
 {
-	return EVERBOARD_VIEW_URL.'everboard.php?notebookGuid='.$notebookGuid;
+	return EVERBOARD_VIEW_URL.'index.php?notebookGuid='.$notebookGuid;
 }
 
 function cleanContent($str)
