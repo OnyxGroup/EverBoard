@@ -73,6 +73,7 @@ function buildAjaxUrl($notebookGuid, $noteGuid)
 	return EVERBOARD_VIEW_URL.'idea.php?notebookGuid='.$notebookGuid.'&noteGuid='.$noteGuid;
 }
 
+/*May need to update this to see if we want to access by name*/
 function buildNotebookUrl($notebookGuid)
 {
 	return EVERBOARD_VIEW_URL.'index.php?notebookGuid='.$notebookGuid;
